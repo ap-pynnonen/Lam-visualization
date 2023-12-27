@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  lam-visualization:
+    build: .
+    environment:
+      - URL_PATH_PREFIX=/lam-visualization
+    ports: 
+      - "80:80"

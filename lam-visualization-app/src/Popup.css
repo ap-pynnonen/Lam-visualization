@@ -1,0 +1,1775 @@
+
+.Overlay {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 250ms;
+}
+
+.Popup {
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    border: 1px solid #000000;
+    position: relative;
+    overflow: hidden;
+  }
+
+#SelectBox {
+  border: 1px dotted #BA1DBD;
+  position: absolute;
+  background: rgba(170, 0, 170, 0.2);
+  visibility: hidden;
+}
+
+.Popup-title {
+  user-select: none;
+}
+
+text {
+  user-select: none;
+}
+
+@media screen and (min-width: 1301px) {
+  .Popup-header {
+    position: inherit;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 75px;
+    width: 100%;
+    background-color: #1A316B;
+  }
+
+ .Popup h1 {
+    padding: 15px 0;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+ }
+
+ .Popup h2 {
+    font-size: 32px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+ }
+
+ .dropdown-hover {
+  position: relative;
+  float: left;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  width: 75px;
+}
+
+.dropdown-hover:hover .hover-content {
+  visibility: visible;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.dropdown-hover button {
+  background-color: #1A316B;
+  color: #FFFFFF;
+  font-size: 59px;
+  padding: 5px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  width: inherit;
+  height: inherit;
+  transition: all 300ms;
+}
+
+.dropdown-hover:hover button {
+  color: #BA1DBD;
+}
+
+.dropdown-hover .hover-content {
+  position: absolute;
+  background-color: #1A316B;
+  min-width: 380px;
+  list-style-type: none;
+  margin: 0;
+  padding: 3px;
+  border: 1px solid #5C80D9;
+  width: 100%;
+  z-index: 7;
+  overflow: hidden;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.hover-content p {
+  color: #FFFFFF;
+  font-size: 22px;
+  padding: 4px;
+  display: block;
+  font-family: 'Inter';
+  font-style: normal;
+  user-select: none;
+}
+
+  .Popup .Log {
+    float: left;
+    width: 25%;
+    height: inherit;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+    background-color: #1A316B;
+  }
+
+  .Popup .Log:hover {
+    cursor: pointer;
+    
+  }
+  .Popup .Log.active {
+    cursor: pointer;
+  }
+  .Popup .Log.active:hover {
+    cursor: pointer;
+  }
+
+  .Toggle-button {
+    margin: 0;
+    margin-left: 6px;
+    position: absolute;
+    top: 10px;
+    transition: all 300ms;
+  }
+
+  .Popup .Log:hover .Toggle-button {
+    color: #BA1DBD;
+  }
+
+  .Popup .Log.active .Toggle-button {
+    color: #BA1DBD;
+  }
+
+  .Popup .Close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    transition: all 300ms;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    background-color:#1A316B;
+    border: none;
+  }
+  
+  .Popup .Close:hover {
+    cursor: pointer;
+    color: #BA1DBD;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 0;
+    right: 1px;
+    font-size: 74px;
+  }
+
+  .Popup-middle {
+    position: inherit;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #1A316B;
+  }
+
+  .Popup-button {
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #1A316B;
+  }
+  
+  .Popup-button:hover {
+    cursor: pointer;
+  }
+  
+  .Popup-button.active {
+    cursor: pointer;
+  }
+
+  .Popup-button.active:hover {
+    cursor: pointer;
+  }
+
+ .Middle-icon {
+  position: absolute;
+  margin: 0;
+  top: 5px;
+  margin-left: 6px;
+ }
+
+ .Popup-button:hover .Middle-icon {
+  color: #BA1DBD;
+ }
+
+ .Popup-button.active .Middle-icon {
+  color: #BA1DBD;
+ }
+
+  .Popup-speed {
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    background-color: #1A316B;
+    user-select: none;
+  }
+
+  .dropdown {
+    position: relative;
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+  }
+
+  .dropdown-button {
+    width: 100%;
+    height: inherit;
+    float: right;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: #1A316B; 
+    border: none;
+  }
+
+  .dropdown-button:hover {
+    cursor: pointer;
+  }
+
+  .dropdown-button.active {
+    cursor: pointer;
+  }
+
+  .dropdown-icon {
+    position: absolute;
+    margin: 0;
+    top: 10px;
+    margin-left: 6px;
+    transition: all 300ms;
+  }
+
+  .dropdown-button:hover .dropdown-icon {
+    color: #BA1DBD;
+  }
+
+  .dropdown-button.active .dropdown-icon {
+    color: #BA1DBD;
+  }
+
+  .menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #5C80D9;
+    width: 100%;
+    z-index: 6;
+    overflow: hidden;
+  }
+
+.menu-item.active {
+  color: #BA1DBD;
+}
+
+.day .menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #5C80D9;
+  width: 100%;
+  z-index: 6;
+  overflow: hidden;
+}
+
+.select .menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #5C80D9;
+  width: 100%;
+  z-index: 6;
+  overflow: hidden;
+}
+
+.menu > li {
+  margin: 0;
+  font-size: 28px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #1A316B;
+  transition: all 300ms;
+}
+
+.menu > li:hover {
+  color: #BA1DBD;
+}
+
+.menu > li > button {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+  .Popup-diagram-header {
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    background-color: #BA1DBD;
+  }
+  
+  .Popup-main {
+    width: 100%;
+    height: 100%;
+   /* background-color: #5C80D9; */
+
+    /* background-color: #525F9F; */
+    background-color: #344263;
+    overflow: hidden;
+  }
+
+  .Popup-download {
+    width: 25%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+  }
+
+  .Popup-download:hover {
+    cursor: pointer;
+    height: inherit;
+  }
+
+  .Popup-download:hover .download-icon {
+    color: #BA1DBD;
+  }
+
+  .donwload {
+    margin-left: 33.33%;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .Popup-multiple {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 45px;
+    background-color: #1A316B;
+  }
+
+  .Popup-multiple-select {
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 25%;
+  }
+
+  .Popup-multiple-select:hover {
+    cursor: pointer;
+
+  }
+
+  .Popup-multiple-select.active {
+    cursor: pointer;
+  }
+  .Popup-multiple-select.active:hover {
+    cursor: pointer;
+  }
+
+  .Multiple-icon {
+    position: absolute;
+    margin: 0;
+    top: 5px;
+    margin-left: 6px;
+  }
+
+  .Popup-multiple-select:hover .Multiple-icon {
+    color: #BA1DBD;
+  }
+
+  .Popup-multiple-select.active .Multiple-icon {
+    color: #BA1DBD;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .Popup-header {
+    position: inherit;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: #1A316B;
+  }
+
+ .Popup h1 {
+    padding: 10px 0;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+ }
+
+ .Popup h2 {
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+ }
+
+ .dropdown-hover {
+  position: relative;
+  float: left;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+}
+
+.dropdown-hover:hover .hover-content {
+  visibility: visible;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.dropdown-hover button {
+  background-color: #1A316B;
+  color: #FFFFFF;
+  font-size: 29px;
+  padding: 3px;
+  border: 1px solid #FFFFFF;
+  border-radius: 25px;
+  width: inherit;
+  height: inherit;
+  transition: all 300ms;
+}
+
+.dropdown-hover:hover button {
+  color: #BA1DBD;
+}
+
+.dropdown-hover .hover-content {
+  position: absolute;
+  background-color: #1A316B;
+  min-width: 320px;
+  list-style-type: none;
+  margin: 0;
+  padding: 2px;
+  border: 1px solid #5C80D9;
+  width: 100%;
+  z-index: 7;
+  overflow: hidden;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.hover-content p {
+  color: #FFFFFF;
+  font-size: 18px;
+  padding: 3px;
+  display: block;
+  font-family: 'Inter';
+  font-style: normal;
+  user-select: none;
+}
+
+ .Popup .Log {
+  float: left;
+  width: 25%;
+  height: inherit;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  background-color: #1A316B;
+}
+
+.Popup .Log:hover {
+  cursor: pointer;
+  
+}
+.Popup .Log.active {
+  cursor: pointer;
+}
+.Popup .Log.active:hover {
+  cursor: pointer;
+}
+
+.Toggle-button {
+  margin: 0;
+  margin-left: 5px;
+  position: absolute;
+  top: 5px;
+  transition: all 300ms;
+}
+
+.Popup .Log:hover .Toggle-button {
+  color: #BA1DBD;
+}
+
+.Popup .Log.active .Toggle-button {
+  color: #BA1DBD;
+}
+
+  .Popup .Close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    transition: all 300ms;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    background-color:#1A316B;
+    border: none;
+  }
+  
+  .Popup .Close:hover {
+    cursor: pointer;
+    color: #BA1DBD;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 0;
+    right: 1px;
+    font-size: 39px;
+  }
+
+  .Popup-middle {
+    position: inherit;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 28px;
+    width: 100%;
+    background-color: #1A316B;
+  }
+
+  .Popup-button {
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #1A316B;
+  }
+  
+  .Popup-button:hover {
+    cursor: pointer;
+  }
+  
+  .Popup-button.active {
+    cursor: pointer;
+  }
+
+  .Popup-button.active:hover {
+    cursor: pointer;
+  }
+
+ .Middle-icon {
+  position: absolute;
+  margin: 0;
+  top: 2px;
+  margin-left: 3px;
+ }
+
+ .Popup-button:hover .Middle-icon {
+  color: #BA1DBD;
+ }
+
+ .Popup-button.active .Middle-icon {
+  color: #BA1DBD;
+ }
+
+  .Popup-speed {
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    background-color: #1A316B;
+    user-select: none;
+  }
+
+  .dropdown {
+    position: relative;
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+  }
+
+  .dropdown-button {
+    width: 100%;
+    height: inherit;
+    float: right;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: #1A316B; 
+    border: none;
+  }
+
+  .dropdown-button:hover {
+    cursor: pointer;
+  }
+
+  .dropdown-button.active {
+    cursor: pointer;
+  }
+
+  .dropdown-icon {
+    position: absolute;
+    margin: 0;
+    top: 4px;
+    margin-left: 3px;
+    transition: all 300ms;
+  }
+
+  .dropdown-button:hover .dropdown-icon {
+    color: #BA1DBD;
+  }
+
+  .dropdown-button.active .dropdown-icon {
+    color: #BA1DBD;
+  }
+
+  .menu {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #5C80D9;
+    width: 100%;
+    z-index: 6;
+    overflow: hidden;
+  }
+
+  .menu-item.active {
+    color: #BA1DBD;
+  }
+
+  .day .menu {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #5C80D9;
+    width: 100%;
+    z-index: 6;
+    overflow: hidden;
+  }
+
+  .select .menu {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #5C80D9;
+    width: 100%;
+    z-index: 6;
+    overflow: hidden;
+  }
+
+.menu > li {
+  margin: 0;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #1A316B;
+  transition: all 300ms;
+}
+
+.menu > li:hover {
+  color: #BA1DBD;
+}
+
+.menu > li > button {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+  .Popup-diagram-header {
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    background-color: #BA1DBD;
+  }
+  
+  .Popup-main {
+    width: 100%;
+    height: 100%;
+    /* background-color: #525F9F; */
+    background-color: #344263;
+    overflow: hidden;
+  }
+
+  .Popup-download {
+    width: 25%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+  }
+
+  .Popup-download:hover {
+    cursor: pointer;
+    height: inherit;
+  }
+
+  .Popup-download:hover .download-icon {
+    color: #BA1DBD;
+  }
+
+  .donwload {
+    margin-left: 33.33%;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .Popup-multiple {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 28px;
+    background-color: #1A316B;
+  }
+
+  .Popup-multiple-select {
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 25%;
+  }
+
+  .Popup-multiple-select:hover {
+    cursor: pointer;
+
+  }
+
+  .Popup-multiple-select.active {
+    cursor: pointer;
+  }
+  .Popup-multiple-select.active:hover {
+    cursor: pointer;
+  }
+
+  .Multiple-icon {
+    position: absolute;
+    margin: 0;
+    top: 2px;
+    margin-left: 3px;
+  }
+
+  .Popup-multiple-select:hover .Multiple-icon {
+    color: #BA1DBD;
+  }
+
+  .Popup-multiple-select.active .Multiple-icon {
+    color: #BA1DBD;
+  }
+}
+
+@media screen and (max-width: 804px) {
+  .Popup-header {
+    position: inherit;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: #1A316B;
+  }
+
+ .Popup h1 {
+    padding: 10px 0;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+ }
+
+ .Popup h2 {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+ }
+
+ .dropdown-hover {
+  position: relative;
+  float: left;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+}
+
+.dropdown-hover:hover .hover-content {
+  visibility: visible;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.dropdown-hover button {
+  background-color: #1A316B;
+  color: #FFFFFF;
+  font-size: 29px;
+  padding: 3px;
+  border: 1px solid #FFFFFF;
+  border-radius: 25px;
+  width: inherit;
+  height: inherit;
+  transition: all 300ms;
+}
+
+.dropdown-hover:hover button {
+  color: #BA1DBD;
+}
+
+.dropdown-hover .hover-content {
+  position: absolute;
+  background-color: #1A316B;
+  min-width: 280px;
+  list-style-type: none;
+  margin: 0;
+  padding: 2px;
+  border: 1px solid #5C80D9;
+  width: 100%;
+  z-index: 7;
+  overflow: hidden;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.hover-content p {
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 3px;
+  display: block;
+  font-family: 'Inter';
+  font-style: normal;
+  user-select: none;
+}
+
+ .Popup .Log {
+  float: left;
+  width: 25%;
+  height: inherit;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  background-color: #1A316B;
+}
+
+.Popup .Log:hover {
+  cursor: pointer;
+  
+}
+.Popup .Log.active {
+  cursor: pointer;
+}
+.Popup .Log.active:hover {
+  cursor: pointer;
+}
+
+.Toggle-button {
+  margin: 0;
+  margin-left: 3px;
+  position: absolute;
+  top: 7px;
+  transition: all 300ms;
+}
+
+.Popup .Log:hover .Toggle-button {
+  color: #BA1DBD;
+}
+
+.Popup .Log.active .Toggle-button {
+  color: #BA1DBD;
+}
+
+  .Popup .Close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    transition: all 300ms;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    background-color:#1A316B;
+    border: none;
+  }
+  
+  .Popup .Close:hover {
+    cursor: pointer;
+    color: #BA1DBD;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 0;
+    right: 1px;
+    font-size: 39px;
+  }
+
+  .Popup-middle {
+    position: inherit;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 28px;
+    width: 100%;
+    background-color: #1A316B;
+  }
+
+  .Popup-button {
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #1A316B;
+  }
+  
+  .Popup-button:hover {
+    cursor: pointer;
+  }
+  
+  .Popup-button.active {
+    cursor: pointer;
+  }
+
+  .Popup-button.active:hover {
+    cursor: pointer;
+  }
+
+ .Middle-icon {
+  position: absolute;
+  margin: 0;
+  top: 2px;
+  margin-left: 3px;
+ }
+
+ .Popup-button:hover .Middle-icon {
+  color: #BA1DBD;
+ }
+
+ .Popup-button.active .Middle-icon {
+  color: #BA1DBD;
+ }
+
+  .Popup-speed {
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    background-color: #1A316B;
+    user-select: none;
+  }
+
+  .dropdown {
+    position: relative;
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+  }
+
+  .dropdown-button {
+    width: 100%;
+    height: inherit;
+    float: right;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: #1A316B; 
+    border: none;
+  }
+
+  .dropdown-button:hover {
+    cursor: pointer;
+  }
+
+  .dropdown-button.active {
+    cursor: pointer;
+  }
+
+  .dropdown-icon {
+    position: absolute;
+    margin: 0;
+    top: 7px;
+    margin-left: 2px;
+    transition: all 300ms;
+  }
+
+  .dropdown-button:hover .dropdown-icon {
+    color: #BA1DBD;
+  }
+
+  .dropdown-button.active .dropdown-icon {
+    color: #BA1DBD;
+  }
+
+  .menu {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #5C80D9;
+    width: 100%;
+    z-index: 6;
+    overflow: hidden;
+  }
+
+  .menu-item.active {
+    color: #BA1DBD;
+  }
+
+  .day .menu {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #5C80D9;
+    width: 100%;
+    z-index: 6;
+    overflow: hidden;
+  }
+
+  .select .menu {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #5C80D9;
+    width: 100%;
+    z-index: 6;
+    overflow: hidden;
+  }
+
+.menu > li {
+  margin: 0;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #1A316B;
+  transition: all 300ms;
+}
+
+.menu > li:hover {
+  color: #BA1DBD;
+}
+
+.menu > li > button {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+  .Popup-diagram-header {
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    background-color: #BA1DBD;
+  }
+  
+  .Popup-main {
+    width: 100%;
+    height: 100%;
+    /* background-color: #525F9F; */
+    background-color: #344263;
+    overflow: hidden;
+  }
+
+  .Popup-download {
+    width: 25%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+  }
+
+  .Popup-download:hover {
+    cursor: pointer;
+    height: inherit;
+  }
+
+  .Popup-download:hover .download-icon {
+    color: #BA1DBD;
+  }
+
+  .donwload {
+    margin-left: 33.33%;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .Popup-multiple {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 28px;
+    background-color: #1A316B;
+  }
+
+  .Popup-multiple-select {
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 25%;
+  }
+
+  .Popup-multiple-select:hover {
+    cursor: pointer;
+
+  }
+
+  .Popup-multiple-select.active {
+    cursor: pointer;
+  }
+  .Popup-multiple-select.active:hover {
+    cursor: pointer;
+  }
+
+  .Multiple-icon {
+    position: absolute;
+    margin: 0;
+    top: 2px;
+    margin-left: 3px;
+  }
+
+  .Popup-multiple-select:hover .Multiple-icon {
+    color: #BA1DBD;
+  }
+
+  .Popup-multiple-select.active .Multiple-icon {
+    color: #BA1DBD;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .Popup-header {
+    position: inherit;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: #1A316B;
+  }
+
+ .Popup h1 {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+ }
+
+ .Popup h2 {
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+ }
+
+ .dropdown-hover {
+  position: relative;
+  float: left;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+}
+
+.dropdown-hover:hover .hover-content {
+  visibility: visible;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.dropdown-hover button {
+  background-color: #1A316B;
+  color: #FFFFFF;
+  font-size: 27px;
+  padding: 3px;
+  border: 1px solid #FFFFFF;
+  border-radius: 25px;
+  width: inherit;
+  height: inherit;
+  transition: all 300ms;
+}
+
+.dropdown-hover:hover button {
+  color: #BA1DBD;
+}
+
+.dropdown-hover .hover-content {
+  position: absolute;
+  background-color: #1A316B;
+  min-width: 240px;
+  list-style-type: none;
+  margin: 0;
+  padding: 2px;
+  border: 1px solid #5C80D9;
+  width: 100%;
+  z-index: 7;
+  overflow: hidden;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.hover-content p {
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 3px;
+  display: block;
+  font-family: 'Inter';
+  font-style: normal;
+  user-select: none;
+}
+
+ .Popup .Log {
+  float: left;
+  width: 25%;
+  height: inherit;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  background-color: #1A316B;
+}
+
+.Popup .Log:hover {
+  cursor: pointer;
+  
+}
+.Popup .Log.active {
+  cursor: pointer;
+}
+.Popup .Log.active:hover {
+  cursor: pointer;
+}
+
+.Toggle-button {
+  margin: 0;
+  margin-left: 2px;
+  position: absolute;
+  top: 10px;
+  transition: all 300ms;
+}
+
+.Popup .Log:hover .Toggle-button {
+  color: #BA1DBD;
+}
+
+.Popup .Log.active .Toggle-button {
+  color: #BA1DBD;
+}
+
+  .Popup .Close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    transition: all 300ms;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    background-color:#1A316B;
+    border: none;
+  }
+  
+  .Popup .Close:hover {
+    cursor: pointer;
+    color: #BA1DBD;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 0;
+    right: 1px;
+    font-size: 39px;
+  }
+
+  .Popup-middle {
+    position: inherit;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 28px;
+    width: 100%;
+    background-color: #1A316B;
+  }
+
+  .Popup-button {
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #1A316B;
+  }
+  
+  .Popup-button:hover {
+    cursor: pointer;
+  }
+  
+  .Popup-button.active {
+    cursor: pointer;
+  }
+
+  .Popup-button.active:hover {
+    cursor: pointer;
+  }
+
+ .Middle-icon {
+  position: absolute;
+  margin: 0;
+  top: 2px;
+  margin-left: 3px;
+ }
+
+ .Popup-button:hover .Middle-icon {
+  color: #BA1DBD;
+ }
+
+ .Popup-button.active .Middle-icon {
+  color: #BA1DBD;
+ }
+
+  .Popup-speed {
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    background-color: #1A316B;
+    user-select: none;
+  }
+
+  .dropdown {
+    position: relative;
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+  }
+
+  .dropdown-button {
+    width: 100%;
+    height: inherit;
+    float: right;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: #1A316B; 
+    border: none;
+  }
+
+  .dropdown-button:hover {
+    cursor: pointer;
+  }
+
+  .dropdown-button.active {
+    cursor: pointer;
+  }
+
+  .dropdown-icon {
+    position: absolute;
+    margin: 0;
+    top: 10px;
+    margin-left: 2px;
+    transition: all 300ms;
+  }
+
+  .dropdown-button:hover .dropdown-icon {
+    color: #BA1DBD;
+  }
+
+  .dropdown-button.active .dropdown-icon {
+    color: #BA1DBD;
+  }
+
+  .menu {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #5C80D9;
+    width: 100%;
+    z-index: 6;
+    overflow: hidden;
+  }
+
+  .menu-item.active {
+    color: #BA1DBD;
+  }
+
+  .day .menu {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #5C80D9;
+    width: 100%;
+    z-index: 6;
+    overflow: hidden;
+  }
+
+  .select .menu {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #5C80D9;
+    width: 100%;
+    z-index: 6;
+    overflow: hidden;
+  }
+
+.menu > li {
+  margin: 0;
+  font-size: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #1A316B;
+  transition: all 300ms;
+}
+
+.menu > li:hover {
+  color: #BA1DBD;
+}
+
+.menu > li > button {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+  .Popup-diagram-header {
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    background-color: #BA1DBD;
+  }
+  
+  .Popup-main {
+    width: 100%;
+    height: 100%;
+    /* background-color: #525F9F; */
+    background-color: #344263;
+    overflow: hidden;
+  }
+
+  .Popup-download {
+    width: 25%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+  }
+
+  .Popup-download:hover {
+    cursor: pointer;
+    height: inherit;
+  }
+
+  .Popup-download:hover .download-icon {
+    color: #BA1DBD;
+  }
+
+  .donwload {
+    margin-left: 33.33%;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .Popup-multiple {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 28px;
+    background-color: #1A316B;
+  }
+
+  .Popup-multiple-select {
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 25%;
+  }
+
+  .Popup-multiple-select:hover {
+    cursor: pointer;
+
+  }
+
+  .Popup-multiple-select.active {
+    cursor: pointer;
+  }
+  .Popup-multiple-select.active:hover {
+    cursor: pointer;
+  }
+
+  .Multiple-icon {
+    position: absolute;
+    margin: 0;
+    top: 2px;
+    margin-left: 3px;
+  }
+
+  .Popup-multiple-select:hover .Multiple-icon {
+    color: #BA1DBD;
+  }
+
+  .Popup-multiple-select.active .Multiple-icon {
+    color: #BA1DBD;
+  }
+}
