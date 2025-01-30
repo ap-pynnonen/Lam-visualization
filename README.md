@@ -36,6 +36,15 @@ Docker kontin portti: 80
 
 Kontin prefix /lam-visualization
 
+---
+
+Näyttö kuvia sovelluksesta
+
+![Kartta](https://github.com/ap-pynnonen/Lam-visualization/blob/main/Kartta_datapisteet.JPG)
+![nopeudet1](https://github.com/ap-pynnonen/Lam-visualization/blob/main/Graafi_ajoneuvot%26nopeudet.JPG)
+![nopeudet2](https://github.com/ap-pynnonen/Lam-visualization/blob/main/Graafi_ajoneuvot%26nopeudet2.JPG)
+![nopeudet3](https://github.com/ap-pynnonen/Lam-visualization/blob/main/Graafi_ajoneuvot%26nopeudet3.JPG)
+
 # lam-visualization (EN)
 
 The goal of the thesis is to visualize automatic traffic measurement points (LAM) data. The goal of the visualization is to give understanding with a quick look of the traffic amounts, speeds and vehicle classes. Digitrafis servises give out free Lam data with both realtime and history data, from which history data is being used for thesis due to its accuracy. Lam measurement points are going to be visualized on a map from which user can select one, and view that specific Lam measurement points data. The specific Lam measurement points generated data must be atleast vieved from 1/3/7 days history data.
@@ -65,3 +74,12 @@ Data visualization
 The idea is for the user to quickly see from the visualization, for example, overspeeding, vehicle amounts
 
 Digitrafi webpage: https://www.digitraffic.fi/tieliikenne/
+
+---
+
+Screen captures of the app
+
+![Kartta](https://github.com/ap-pynnonen/Lam-visualization/blob/main/Kartta_datapisteet.JPG)
+![nopeudet1](https://github.com/ap-pynnonen/Lam-visualization/blob/main/Graafi_ajoneuvot%26nopeudet.JPG)
+![nopeudet2](https://github.com/ap-pynnonen/Lam-visualization/blob/main/Graafi_ajoneuvot%26nopeudet2.JPG)
+![nopeudet3](https://github.com/ap-pynnonen/Lam-visualization/blob/main/Graafi_ajoneuvot%26nopeudet3.JPG)
